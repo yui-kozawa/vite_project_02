@@ -65,7 +65,7 @@ export class ToDoList extends LitElement { //Litコンポーネントを作る�
       <label>
           <input type="checkbox"
             @change=${this.setHideCompleted}
-            ?chacked=${this.hideCompleted}>
+            ?checked=${this.hideCompleted}>
             完了したものは非表示
       </label>
 

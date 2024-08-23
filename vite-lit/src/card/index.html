@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>カードコンポーネント</title>
+    <link rel="stylesheet" href="./_assets/style.css" />
+    <script type="module" src="./index.ts"></script>
+    <!-- <script type="module" src="/src/my-element.ts"></script> -->
+  </head>
+  <body>
+    <div class="l-container">
+      <div class="card__list">
+        <y-card
+          href="#"
+          width="150"
+          height="150"
+          src="https://placehold.jp/200x100.png"
+          srcSP="https://placehold.jp/300x100.png"
+          alt="Litにて作成_alt"
+          blank
+        >
+        <p slot="ttl">Litにて作成_別タブ_ダミータイトルですダミータイトルですダミータイトルです</p>
+        <p slot="txt">Litにて作成_ダミーテキストですダミーテキストです</p>
+        </y-card>
+        <y-card
+          href="#"
+          width="150"
+          height="150"
+          src="https://placehold.jp/200x100.png"
+          srcSP="https://placehold.jp/300x100.png"
+          alt="Litにて作成_alt"
+          ratio="1/1"
+        >
+        <p slot="ttl">Litにて作成2_アスペクト比変更_ダミータイトルですダミータイトルですダミータイトルです</p>
+        <p slot="txt">Litにて作成2_ダミーテキストですダミーテキストですダミーテキストですダミーテキストです</p>
+        </y-card>
+        <y-card
+          href="#"
+          width="150"
+          height="150"
+          src="https://placehold.jp/100x100.png"
+          srcSP="https://placehold.jp/300x100.png"
+          alt="Litにて作成_alt"
+        >
+        <p slot="ttl">Litにて作成3_ダミータイトルですダミータイトルですダミータイトルです</p>
+        <p slot="txt">Litにて作成3_ダミーテキストですダミーテキストです</p>
+        </y-card>
+      </div>
+  </div>
+    <div class="l-container">
+      <ul class="card__list">
+        <li class="card__item">
+          <a href="" class="card__link" target="blank">
+            <div class="card__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="https://placehold.jp/200x100.png">
+                <img src="https://placehold.jp/150x150.png" alt="" width="" height="">
+              </picture>
+            </div>
+            <p class="card__ttl">HTMLにて作成_タイトルタイトル</p>
+            <p class="card__txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </a>
+        </li>
+        <li class="card__item">
+          <a href="" class="card__link" target="blank">
+            <div class="card__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="https://placehold.jp/200x100.png">
+                <img src="https://placehold.jp/150x150.png" alt="" width="" height="">
+              </picture>
+            </div>
+            <p class="card__ttl">HTMLにて作成_タイトルタイトル</p>
+            <p class="card__txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </a>
+        </li>
+        <li class="card__item">
+          <a href="" class="card__link" target="blank">
+            <div class="card__img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="https://placehold.jp/200x100.png">
+                <img src="https://placehold.jp/150x150.png" alt="" width="" height="">
+              </picture>
+            </div>
+            <p class="card__ttl">HTMLにて作成_タイトルタイトル</p>
+            <p class="card__txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+<a href="" class="" target="_blank" rel="noopener" style="aspect-ratio: 16:9;"></a>
