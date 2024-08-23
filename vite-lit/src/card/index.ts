@@ -14,7 +14,12 @@ export class card extends LitElement {
         .card__item {
             display: flex;
             flex-direction: column;
-            flex-grow: 1;
+            height: 100%;
+            /* flex-grow: 1; */
+        }
+
+        .card__item.-border {
+            border: 1px solid #ccc;
         }
 
         .card__link {
@@ -23,17 +28,13 @@ export class card extends LitElement {
             flex-direction: column;
             color: #333;
             text-decoration: none;
-            height: 100%;
+            /* height: 100%; */
         }
 
         .card__img {
             width: 100%;
         }
-
-        .card__img picture {
-
-        }
-
+        
         .card__img img {
             width: 100%;
             height: 100%;
@@ -88,7 +89,7 @@ noopener => HTML側で blank と記載あったら（trueだったら） 属性�
 */
     override render() { //テンプレートリテラルで記載するときは、return が必要かも
       return  html`
-        <div class="card__item">
+        <div class="card__item ${this.border ? "-border" : ""}">
             <a href="${this.href}"
                 class="card__link"
                 target="${this.blank ? "_blank" : nothing}"
