@@ -34,7 +34,7 @@ export class card extends LitElement {
         .card__img {
             width: 100%;
         }
-        
+
         .card__img img {
             width: 100%;
             height: 100%;
@@ -90,7 +90,11 @@ noopener => HTML側で blank と記載あったら（trueだったら） 属性�
     override render() { //テンプレートリテラルで記載するときは、return が必要かも
       return  html`
         <div class="card__item ${this.border ? "-border" : ""}">
-            <a href="${this.href}"
+					${this.href
+
+						//aタグの場合
+						? html `
+							<a href="${this.href}"
                 class="card__link"
                 target="${this.blank ? "_blank" : nothing}"
                 rel="${this.blank ? "noopener" : nothing}"
@@ -109,7 +113,29 @@ noopener => HTML側で blank と記載あったら（trueだったら） 属性�
                 </div>
                 <slot name="ttl" class="card__ttl"></slot>
                 <slot name="txt" class="card__txt"></slot>
-            </a>
+							</a>
+						`
+						// aタグじゃない場合
+						: html `
+							<div class="card__box">
+                <div class="card__img">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="${this.srcSP}">
+                        <img
+                            src="${this.src}"
+                            alt="${this.alt}"
+                            width="${this.width}"
+                            height="${this.height}"
+                            style="aspect-ratio: ${this.ratio};"
+                        >
+                    </picture>
+                </div>
+                <slot name="ttl" class="card__ttl"></slot>
+                <slot name="txt" class="card__txt"></slot>
+							</div>
+						`
+					}
+
         </div>
     `
     }
