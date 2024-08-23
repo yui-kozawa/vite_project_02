@@ -15,20 +15,44 @@ export class card extends LitElement {
             display: flex;
             flex-direction: column;
             height: 100%;
+
             /* flex-grow: 1; */
         }
 
         .card__item.-border {
             border: 1px solid #ccc;
+						border-radius: 10px;
+
         }
 
+				/* aタグの場合のクラス名 */
         .card__link {
             position: relative;
             display: flex;
             flex-direction: column;
             color: #333;
             text-decoration: none;
-            /* height: 100%; */
+						border-radius: 10px;
+						overflow: hidden;
+						flex: 1;
+						transition: box-shadow 0.2s;
+        }
+
+				/* aタグのじゃない場合のクラス名 */
+
+				.card__box {
+					position: relative;
+					display: flex;
+					flex-direction: column;
+					color: #333;
+					border-radius: 10px;
+					overflow: hidden;
+					flex: 1;
+
+				}
+
+        .card__link:hover {
+					box-shadow: 0px 0px 15px -5px #777777;
         }
 
         .card__img {
@@ -45,7 +69,7 @@ export class card extends LitElement {
 
         .card__ttl {
             font-size: 20px;
-            color: #9059a5;
+            color: #333;
         }
 
         .card__txt {
