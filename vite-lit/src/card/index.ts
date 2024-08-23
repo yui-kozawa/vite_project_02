@@ -3,7 +3,7 @@ import { customElement, property } from "lit/decorators.js";
 // import styles from "./_assets/style.css"; //style-loaderやcss-loaderなどのローダーが正しく設定されていないと、CSSファイルをモジュールとして扱うことができないためエラー？
 
 
-@customElement('y-card')
+@customElement('c-card')
 export class card extends LitElement {
 //   static styles = unsafeCSS(styles);
 
@@ -143,6 +143,6 @@ noopener => HTML側で blank と記載あったら（trueだったら） 属性�
 
 declare global {
     interface HTMLElementTagNameMap {
-        'y-card': card
+        'c-card': card
     }
 }
