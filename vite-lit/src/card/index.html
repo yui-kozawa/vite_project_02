@@ -7,7 +7,10 @@
     <title>カードコンポーネント</title>
     <link rel="stylesheet" href="./_assets/style.css" />
     <script type="module" src="./index.ts"></script>
+    <script type="module" src="./btn.ts"></script>
     <script type="module" src="./splide.ts"></script>
+    <script src="https://kit.fontawesome.com/4fda5c4906.js" crossorigin="anonymous"></script>
+
     <!-- <script type="module" src="/src/my-element.ts"></script> -->
   </head>
   <body>
@@ -15,9 +18,48 @@
       <div class="splide" role="group" aria-label="Splideの基本的なHTML">
         <div class="splide__track">
           <ul class="splide__list">
-            <li class="splide__slide">Slide 01</li>
-            <li class="splide__slide">Slide 02</li>
-            <li class="splide__slide">Slide 03</li>
+            <li class="splide__slide">
+              <c-card
+              href="#"
+              width="150"
+              height="150"
+              src="https://placehold.jp/200x100.png"
+              srcSP="https://placehold.jp/300x100.png"
+              alt="Litにて作成_alt"
+              blank
+              >
+              <p slot="ttl">Litにて作成_別タブ_ダミータイトルですダミータイトルですダミータイトルです</p>
+              <p slot="txt">Litにて作成_ダミーテキストですダミーテキストです</p>
+              </c-card>
+            </li>
+            <li class="splide__slide">
+              <c-card
+              href="#"
+              width="150"
+              height="150"
+              src="https://placehold.jp/200x100.png"
+              srcSP="https://placehold.jp/300x100.png"
+              alt="Litにて作成_alt"
+              blank
+              >
+              <p slot="ttl">Litにて作成_別タブ_ダミータイトルですダミータイトルですダミータイトルです</p>
+              <p slot="txt">Litにて作成_ダミーテキストですダミーテキストです</p>
+              </c-card>
+            </li>
+            <li class="splide__slide">
+              <c-card
+              href="#"
+              width="150"
+              height="150"
+              src="https://placehold.jp/200x100.png"
+              srcSP="https://placehold.jp/300x100.png"
+              alt="Litにて作成_alt"
+              blank
+              >
+              <p slot="ttl">Litにて作成_別タブ_ダミータイトルですダミータイトルですダミータイトルです</p>
+              <p slot="txt">Litにて作成_ダミーテキストですダミーテキストです</p>
+              </c-card>
+            </li>
           </ul>
         </div>
       </div>
@@ -81,6 +123,26 @@
         <p slot="txt">Litにて作成5_ダミーテキストですダミーテキストです</p>
         </c-card>
       </div>
+      <button class="btn">テキストテキスト
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+      <button class="btn left">テキストテキスト
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+      <button class="btn right">テキストテキストテキストテキストテキストテキスト
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+      <button class="btn sm right">テキストテキストテキストテキストテキストテキスト
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+      <c-btn 
+        label="テストーーーーーー"
+        href="#"
+        icon="pdf"
+
+        >
+
+      </c-btn>
   </div>
     <!-- <div class="l-container">
       <ul class="card__list">
