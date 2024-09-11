@@ -68,12 +68,17 @@ export class card extends LitElement {
         }
 
         .card__ttl {
+            display: block;
+            padding: 0 20px;
             font-size: 20px;
             color: #333;
         }
 
         .card__txt {
+            display: block;
+            padding: 0 20px;
             font-size: 16px;
+
         }
     `;
 

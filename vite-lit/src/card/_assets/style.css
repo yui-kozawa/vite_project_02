@@ -1,6 +1,11 @@
 .l-container {
   max-width: 990px;
   margin: 0 auto;
+
+
+}
+.l-container  + .l-container {
+  margin: 80px auto 0;
 }
 
 .card__list {
@@ -94,4 +99,13 @@ button {
 }
 .btn.sm.left i {
   left: 16px;
+}
+
+.splide__track {
+  padding: 2em 0;
+
+}
+
+.splide__slide {
+  margin-right: 2em !important;
 }

@@ -1,188 +1,177 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>カードコンポーネント</title>
+    <title>Lit コンポーネント</title>
     <link rel="stylesheet" href="./_assets/style.css" />
     <script type="module" src="./index.ts"></script>
     <script type="module" src="./btn.ts"></script>
     <script type="module" src="./splide.ts"></script>
     <script src="https://kit.fontawesome.com/4fda5c4906.js" crossorigin="anonymous"></script>
-
-    <!-- <script type="module" src="/src/my-element.ts"></script> -->
   </head>
   <body>
+    <h1>Lit Components</h1>
     <div class="l-container">
-      <div class="splide" role="group" aria-label="Splideの基本的なHTML">
+      <h2>カードコンポーネント</h2>
+
+      <div class="card__list">
+        <c-card
+          href="#"
+          width="300"
+          height="200"
+          src="https://placehold.jp/c2a2e2/ffffff/100x100.png"
+          srcSP="https://placehold.jp/c2a2e2/ffffff/300x100.png"
+          alt="Litにて作成_alt"
+          border
+        >
+        <p slot="ttl">aタグ_ダミータイトルです</p>
+        <p slot="txt">ダミーテキストですダミーテキストですダミーテキストですダミーテキストです</p>
+        </c-card>
+        <c-card
+          href="#"
+          width="300"
+          height="200"
+          src="https://placehold.jp/c2a2e2/ffffff/300x200.png"
+          srcSP="https://placehold.jp/c2a2e2/ffffff/300x100.png"
+          alt="Litにて作成_alt"
+          blank
+          border
+        >
+        <p slot="ttl">aタグ別タブ_ダミータイトルです</p>
+        <p slot="txt">ダミーテキストですダミーテキストですダミーテキストですダミーテキストです</p>
+        </c-card>
+        <c-card
+        href="#"
+        width="300"
+        height="200"
+        src="https://placehold.jp/c2a2e2/ffffff/300x200.png"
+        srcSP="https://placehold.jp/c2a2e2/ffffff/300x100.png"
+        alt="Litにて作成_alt"
+        ratio="4/3"
+        border
+      >
+      <p slot="ttl">アスペクト比変更_ダミータイトルです</p>
+      <p slot="txt">ダミーテキストですダミーテキストですダミーテキストですダミーテキストです</p>
+      </c-card>
+        <c-card
+          width="300"
+          height="200"
+          src="https://placehold.jp/c2a2e2/ffffff/100x100.png"
+          srcSP="https://placehold.jp/c2a2e2/ffffff/300x100.png"
+          alt="Litにて作成_alt"
+          border
+        >
+        <p slot="ttl">aタグじゃない場合_ダミータイトルです</p>
+        <p slot="txt">ダミーテキストですダミーテキストですダミーテキストですダミーテキストです</p>
+        </c-card>
+        <c-card
+          width="300"
+          height="200"
+          src="https://placehold.jp/c2a2e2/ffffff/100x100.png"
+          srcSP="https://placehold.jp/c2a2e2/ffffff/300x100.png"
+          alt="Litにて作成_alt"
+        >
+        <p slot="ttl">borderなし_ダミータイトルです</p>
+        <p slot="txt">ダミーテキストですダミーテキストです</p>
+        </c-card>
+      </div>
+
+    </div>
+    <div class="l-container">
+      <h2>カードコンポーネント + Splide</h2>
+      <div class="splide" role="group" aria-label="">
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
               <c-card
               href="#"
-              width="150"
-              height="150"
-              src="https://placehold.jp/200x100.png"
-              srcSP="https://placehold.jp/300x100.png"
+              width="300"
+              height="200"
+              src="https://placehold.jp/c2a2e2/ffffff/300x200.png"
+              srcSP="https://placehold.jp/c2a2e2/ffffff/300x100.png"
               alt="Litにて作成_alt"
               blank
+              border
               >
-              <p slot="ttl">Litにて作成_別タブ_ダミータイトルですダミータイトルですダミータイトルです</p>
-              <p slot="txt">Litにて作成_ダミーテキストですダミーテキストです</p>
+              <p slot="ttl">ダミータイトルですダミータイトルですダミータイトルです</p>
+              <p slot="txt">ダミーテキストですダミーテキストですダミーテキストですダミーテキストです</p>
               </c-card>
             </li>
             <li class="splide__slide">
               <c-card
               href="#"
-              width="150"
-              height="150"
-              src="https://placehold.jp/200x100.png"
-              srcSP="https://placehold.jp/300x100.png"
+              width="300"
+              height="200"
+              src="https://placehold.jp/c2a2e2/ffffff/300x200.png"
+              srcSP="https://placehold.jp/c2a2e2/ffffff/300x100.png"
               alt="Litにて作成_alt"
               blank
+              border
               >
-              <p slot="ttl">Litにて作成_別タブ_ダミータイトルですダミータイトルですダミータイトルです</p>
-              <p slot="txt">Litにて作成_ダミーテキストですダミーテキストです</p>
+              <p slot="ttl">ダミータイトルですダミータイトルですダミータイトルです</p>
+              <p slot="txt">ダミーテキストですダミーテキストですダミーテキストですダミーテキストです</p>
               </c-card>
             </li>
             <li class="splide__slide">
               <c-card
               href="#"
-              width="150"
-              height="150"
-              src="https://placehold.jp/200x100.png"
-              srcSP="https://placehold.jp/300x100.png"
+              width="300"
+              height="200"
+              src="https://placehold.jp/c2a2e2/ffffff/300x200.png"
+              srcSP="https://placehold.jp/c2a2e2/ffffff/300x100.png"
               alt="Litにて作成_alt"
               blank
+              border
               >
-              <p slot="ttl">Litにて作成_別タブ_ダミータイトルですダミータイトルですダミータイトルです</p>
-              <p slot="txt">Litにて作成_ダミーテキストですダミーテキストです</p>
+              <p slot="ttl">ダミータイトルですダミータイトルですダミータイトルです</p>
+              <p slot="txt">ダミーテキストですダミーテキストですダミーテキストですダミーテキストです</p>
+              </c-card>
+            </li>
+            <li class="splide__slide">
+              <c-card
+              href="#"
+              width="300"
+              height="200"
+              src="https://placehold.jp/c2a2e2/ffffff/300x200.png"
+              srcSP="https://placehold.jp/c2a2e2/ffffff/300x100.png"
+              alt="Litにて作成_alt"
+              blank
+              border
+              >
+              <p slot="ttl">ダミータイトルですダミータイトルですダミータイトルです</p>
+              <p slot="txt">ダミーテキストですダミーテキストですダミーテキストですダミーテキストです</p>
               </c-card>
             </li>
           </ul>
         </div>
       </div>
-      <div class="card__list">
-        <c-card
-          href="#"
-          width="150"
-          height="150"
-          src="https://placehold.jp/200x100.png"
-          srcSP="https://placehold.jp/300x100.png"
-          alt="Litにて作成_alt"
-          blank
-        >
-        <p slot="ttl">Litにて作成_別タブ_ダミータイトルですダミータイトルですダミータイトルです</p>
-        <p slot="txt">Litにて作成_ダミーテキストですダミーテキストです</p>
-        </c-card>
-        <c-card
-          href="#"
-          width="150"
-          height="150"
-          src="https://placehold.jp/200x100.png"
-          srcSP="https://placehold.jp/300x100.png"
-          alt="Litにて作成_alt"
-          ratio="4/3"
-        >
-        <p slot="ttl">Litにて作成2_アスペクト比変更_ダミータイトルですダミータイトルですダミータイトルです</p>
-        <p slot="txt">Litにて作成2_ダミーテキストですダミーテキストですダミーテキストですダミーテキストです</p>
-        </c-card>
-        <c-card
-          href="#"
-          width="150"
-          height="150"
-          src="https://placehold.jp/100x100.png"
-          srcSP="https://placehold.jp/300x100.png"
-          alt="Litにて作成_alt"
-          border
-        >
-        <p slot="ttl">Litにて作成3_ダミータイトルですダミータイトルですダミータイトルです</p>
-        <p slot="txt">Litにて作成3_ダミーテキストですダミーテキストです</p>
-        </c-card>
-        <c-card
-          width="150"
-          height="150"
-          src="https://placehold.jp/100x100.png"
-          srcSP="https://placehold.jp/300x100.png"
-          alt="Litにて作成_alt"
-          border
-        >
-        <p slot="ttl">Litにて作成4_aタグじゃない場合_ダミータイトルですダミータイトルですダミータイトルです</p>
-        <p slot="txt">Litにて作成4_ダミーテキストですダミーテキストです</p>
-        </c-card>
-        <c-card
-          width="150"
-          height="150"
-          src="https://placehold.jp/100x100.png"
-          srcSP="https://placehold.jp/300x100.png"
-          alt="Litにて作成_alt"
-          border
-        >
-        <p slot="ttl">Litにて作成5_ダミータイトルですダミータイトルですダミータイトルです</p>
-        <p slot="txt">Litにて作成5_ダミーテキストですダミーテキストです</p>
-        </c-card>
-      </div>
-      <button class="btn">テキストテキスト
-        <i class="fa-solid fa-arrow-right"></i>
-      </button>
-      <button class="btn left">テキストテキスト
-        <i class="fa-solid fa-arrow-right"></i>
-      </button>
-      <button class="btn right">テキストテキストテキストテキストテキストテキスト
-        <i class="fa-solid fa-arrow-right"></i>
-      </button>
-      <button class="btn sm right">テキストテキストテキストテキストテキストテキスト
-        <i class="fa-solid fa-arrow-right"></i>
-      </button>
-      <c-btn 
-        label="テストーーーーーー"
-        href="#"
-        icon="pdf"
-
-        >
-
-      </c-btn>
-  </div>
+    </div>
     <!-- <div class="l-container">
-      <ul class="card__list">
-        <li class="card__item">
-          <a href="" class="card__link" target="blank">
-            <div class="card__img">
-              <picture>
-                <source media="(max-width: 768px)" srcset="https://placehold.jp/200x100.png">
-                <img src="https://placehold.jp/150x150.png" alt="" width="" height="">
-              </picture>
-            </div>
-            <p class="card__ttl">HTMLにて作成_タイトルタイトル</p>
-            <p class="card__txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </a>
-        </li>
-        <li class="card__item">
-          <a href="" class="card__link" target="blank">
-            <div class="card__img">
-              <picture>
-                <source media="(max-width: 768px)" srcset="https://placehold.jp/200x100.png">
-                <img src="https://placehold.jp/150x150.png" alt="" width="" height="">
-              </picture>
-            </div>
-            <p class="card__ttl">HTMLにて作成_タイトルタイトル</p>
-            <p class="card__txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </a>
-        </li>
-        <li class="card__item">
-          <a href="" class="card__link" target="blank">
-            <div class="card__img">
-              <picture>
-                <source media="(max-width: 768px)" srcset="https://placehold.jp/200x100.png">
-                <img src="https://placehold.jp/150x150.png" alt="" width="" height="">
-              </picture>
-            </div>
-            <p class="card__ttl">HTMLにて作成_タイトルタイトル</p>
-            <p class="card__txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </a>
-        </li>
-      </ul>
-    </div> -->
+      <h2>ボタンコンポーネント</h2>
+       <p>途中までしかできてません、、</p>
+    <button class="btn">テキストテキスト
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+    <button class="btn left">テキストテキスト
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+    <button class="btn right">テキストテキストテキストテキストテキストテキスト
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+    <button class="btn sm right">テキストテキストテキストテキストテキストテキスト
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+    <c-btn
+      label="aタグテスト"
+      href="#"
+      >
+    </c-btn>
+    <c-btn
+      label="buttonタグテスト"
+      >
+    </c-btn>
+  </div> -->
   </body>
 </html>
