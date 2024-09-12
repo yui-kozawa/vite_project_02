@@ -25,7 +25,7 @@ export class ToDoList extends LitElement { //Litコンポーネントを作る�
     @state()
     private _listItems = [ //pugのオブジェクトと一緒のような書き方
       {text: 'Lit チュートリアル', completed: true},
-      {text: 'LitでTodoリストを作る', completed:  false}
+      {text: 'LitでTodoリストの作成', completed:  false}
     ];
 
     @property()
@@ -66,7 +66,7 @@ export class ToDoList extends LitElement { //Litコンポーネントを作る�
           <input type="checkbox"
             @change=${this.setHideCompleted}
             ?checked=${this.hideCompleted}>
-            完了したものは非表示
+            全て完了
       </label>
 
       `;

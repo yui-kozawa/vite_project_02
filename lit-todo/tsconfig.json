@@ -20,5 +20,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": ["src", "vite-config.ts", "../lit-card/src/index.ts", "../lit-card/src/splide.ts", "../lit-card/src/btn.ts"]
 }
